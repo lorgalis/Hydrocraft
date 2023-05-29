@@ -443,16 +443,13 @@ insertItemListsInProcDistribution( "GigamartCandy", {   gigamart_candy_items  } 
 local gigamart_canned_food_items = {
         "Hydrocraft.HCCannedapple", 1,
         "Hydrocraft.HCCannedpear", 1,
-        "Hydrocraft.HCCannedpeach", 1,
         "Hydrocraft.HCCannedgreenbeans", 1,
         "Hydrocraft.HCCannedshrooms", 1,
         "Hydrocraft.HCCannedpumpkin", 1,
         "Hydrocraft.HCCannedspam", 1,
         "Hydrocraft.HCCannedcranberries", 1,
-        "Hydrocraft.HCCannedpineapple", 1,
         "Hydrocraft.HCCannedcheesesauce", 1,
         "Hydrocraft.HCCannedchickenbreast", 1,
-        "Hydrocraft.HCCannedfruitcocktail", 1,
         "Hydrocraft.HCCannedmacncheese", 1,
         "Hydrocraft.HCCannedpiefillingapple", 1,
         "Hydrocraft.HCCannedpiefillingcherry", 1,
@@ -871,20 +868,17 @@ insertItemListsInProcDistribution( "KitchenPots", {  kitchen_pots_items  } );
 local kitchen_canned_food_items = {
         "Hydrocraft.HCCannedapple", 4,
         "Hydrocraft.HCCannedpear", 4,
-        "Hydrocraft.HCCannedpeach", 4,
         "Hydrocraft.HCCannedgreenbeans", 4,
         "Hydrocraft.HCCannedshrooms", 4,
         "Hydrocraft.HCCannedpumpkin", 4,
         "Hydrocraft.HCCannedspam", 4,
         "Hydrocraft.HCCannedcranberries", 4,
-        "Hydrocraft.HCCannedpineapple", 4,
         "Hydrocraft.HCCannedrefriedbeans", 4,
         "Hydrocraft.HCCannedcreamofchicken", 4,
         "Hydrocraft.HCCannedsoupclassic", 4,
         "Hydrocraft.HCCanbangedup", 4,
         "Hydrocraft.HCCannedcheesesauce", 4,
         "Hydrocraft.HCCannedchickenbreast", 4,
-        "Hydrocraft.HCCannedfruitcocktail", 4,
         "Hydrocraft.HCCannedmacncheese", 4,
         "Hydrocraft.HCCannedpiefillingapple", 4,
         "Hydrocraft.HCCannedpiefillingcherry", 4,
@@ -898,7 +892,10 @@ local kitchen_canned_food_items = {
         "Hydrocraft.HCJarredgrapes", 4,
         "Hydrocraft.HCJarredberries", 4,
 };
---insertItemListsInProcDistribution( "KitchenCannedFood",  {  kitchen_canned_food_items}   );
+
+ProceduralDistributions["list"]["KitchenCannedFood"].rolls=1.5
+
+insertItemListsInProcDistribution( "KitchenCannedFood",  {  kitchen_canned_food_items}   );
 
 -- KitchenDryFood
 local kitchen_dry_food_items = {
