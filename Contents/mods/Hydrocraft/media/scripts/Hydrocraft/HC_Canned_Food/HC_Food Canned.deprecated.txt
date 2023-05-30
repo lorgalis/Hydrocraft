@@ -1,0 +1,99 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+/** example recipe    
+   recipe Convert Me{ , Result:,     Time:1, Category:HCDeprecate, }
+
+*/
+
+/* now a vanilla item */ 
+item HCCannedfruitcocktail     { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedpeach             { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedpineapple         { Type= Food, DisplayName= Convert Me!,  }
+
+recipe Convert Me{ HCCannedfruitcocktail, Result:CannedFruitCocktail, Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedpeach,         Result:CannedPeaches,       Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedpineapple,     Result:CannedPineapple,     Time:1, Category:HCDeprecate, }
+
+item HCCannedfruitcocktailopen { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedpeachopen         { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedpineappleopen     { Type= Food, DisplayName= Convert Me!,  }
+
+recipe Convert Me{ HCCannedfruitcocktailopen, Result:CannedFruitCocktail,     Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedpeachopen,         Result:CannedFruitCocktailOpen, Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedpineappleopen,     Result:CannedPineappleOpen,     Time:1, Category:HCDeprecate, }
+
+
+/** Name change HCCanned*openempty -> HCCanned*empty  */
+item HCCannedcheesesauceopenempty         { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedchickenbreastopenempty       { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedgovermentbeefopenempty       { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedgovermentbreadopenempty      { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedgovermentchickenopenempty    { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedgovermentporkopenempty       { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedmacncheeseopenempty          { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedpiefillingappleopenempty     { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedpiefillingblueberryopenempty { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedpiefillingcherryopenempty    { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedravioliopenempty             { Type= Normal, DisplayName= Convert Me!,  }
+item HCCannedspaghettiringsopenempty      { Type= Normal, DisplayName= Convert Me!,  }
+
+recipe Convert Me{ HCCannedcheesesauceopenempty,         Result:HCCannedcheesesauceempty,         Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedchickenbreastopenempty,       Result:HCCannedchickenbreastempty,       Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentbeefopenempty,       Result:HCCannedgovernmentbeefempty,      Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentbreadopenempty,      Result:HCCannedgovernmentbreadempty,     Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentchickenopenempty,    Result:HCCannedgovernmentchickenempty,   Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentporkopenempty,       Result:HCCannedgovernmentporkempty,      Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedmacncheeseopenempty,          Result:HCCannedmacncheeseempty,          Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedpiefillingappleopenempty,     Result:HCCannedpiefillingappleempty,     Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedpiefillingblueberryopenempty, Result:HCCannedpiefillingblueberryempty, Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedpiefillingcherryopenempty,    Result:HCCannedpiefillingcherryempty,    Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedravioliopenempty,             Result:HCCannedravioliempty,             Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedspaghettiringsopenempty,      Result:HCCannedspaghettiringsempty,      Time:1, Category:HCDeprecate, }
+
+
+
+
+/** MUshroom -> shroom */
+item HCCannedmushroomsempty { Type= Normal, DisplayName= Convert Me!,  }
+
+recipe Convert Me{ HCCannedmushroomsempty, Result:HCCannedshroomsempty, Time:1, Category:HCDeprecate, }
+
+/** Goverment -> Government */
+item HCCannedgovermentbeef     { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedgovermentbread    { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedgovermentchicken  { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedgovermentpork     { Type= Food, DisplayName= Convert Me!,  }
+
+recipe Convert Me{ HCCannedgovermentbeef,    Result:HCCannedgovernmentbeef,     Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentbread,   Result:HCCannedgovernmentbread,    Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentchicken, Result:HCCannedgovernmentchicken,  Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentpork,    Result:HCCannedgovernmentpork,     Time:1, Category:HCDeprecate, }
+   
+item HCCannedgovermentbeefopen     { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedgovermentbreadopen    { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedgovermentchickenopen  { Type= Food, DisplayName= Convert Me!,  }
+item HCCannedgovermentporkopen     { Type= Food, DisplayName= Convert Me!,  }
+
+recipe Convert Me{ HCCannedgovermentbeefopen,    Result:HCCannedgovernmentbeefopen,     Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentbreadopen,   Result:HCCannedgovernmentbreadopen,    Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentchickenopen, Result:HCCannedgovernmentchickenopen,  Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCCannedgovermentporkopen,    Result:HCCannedgovernmentporkopen,     Time:1, Category:HCDeprecate, }
+
+/** Vanilla extension cans not matchin HC nameing conventions
+
+item HCBeansempty      { Type= Food, DisplayName= Convert Me!,  }
+item HCDogfoodempty    { Type= Food, DisplayName= Convert Me!,  }
+item HCTinnedsoupempty { Type= Food, DisplayName= Convert Me!,  }
+item HCTunatinempty    { Type= Food, DisplayName= Convert Me!,  }
+
+recipe Convert Me{ HCBeansempty,      Result:HCCannedbeansempty,      Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCDogfoodempty,    Result:HCCanneddogfoodempty,    Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCTinnedsoupempty, Result:HCCannedtinnedsoupempty, Time:1, Category:HCDeprecate, }
+recipe Convert Me{ HCTunatinempty,    Result:HCCannedtunatinempty,    Time:1, Category:HCDeprecate, }
+
+}

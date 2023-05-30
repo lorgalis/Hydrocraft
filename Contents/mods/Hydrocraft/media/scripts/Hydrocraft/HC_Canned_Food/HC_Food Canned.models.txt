@@ -1,0 +1,126 @@
+module Hydrocraft
+{
+    imports
+    {
+    	Base
+    }
+  
+model HCScrappaper                     { mesh = WorldItems/Tissue,    texture = HC_Food_Canned/HC_Food_Canned.HCScrappaper,          }
+																																     
+																																     
+model HCCanbangedup                    { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCanbangedup,                    }
+model HCCanbangedupempty               { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCanbangedupempty,               } 
+model HCCanbangedupopen                { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCanbangedup,                    }
+model HCCanbangedupwater               { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCanbangedupwater,               }
+																										     
+model HCCannedapple                    { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedapple,                    }
+model HCCannedappleempty               { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedappleempty,               }
+model HCCannedappleopen                { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedapple,                    }
+model HCCannedapplewater               { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedapplewater,               }
+																																     
+model HCCannedcheesesauce              { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedcheesesauce,              }
+model HCCannedcheesesauceempty         { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcheesesauceempty,         }
+model HCCannedcheesesauceopen          { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcheesesauce,              }
+model HCCannedcheesesaucewater         { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcheesesaucewater,         }
+																																     
+model HCCannedchickenbreast            { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedgeneric,                  }
+model HCCannedchickenbreastempty       { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgenericempty,             }
+model HCCannedchickenbreastopen        { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgeneric,                  }
+model HCCannedchickenbreastwater       { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgenericwater,             }
+																																     
+model HCCannedcranberries              { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedcranberries,              }
+model HCCannedcranberriesempty         { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcranberriesempty,         }
+model HCCannedcranberriesopen          { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcranberries,              }
+model HCCannedcranberrieswater         { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcranberrieswater,         }
+																																     
+model HCCannedcreamofchicken           { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedcreamofchicken,           }
+model HCCannedcreamofchickenempty      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcreamofchickenempty,      }
+model HCCannedcreamofchickenopen       { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcreamofchicken,           }
+model HCCannedcreamofchickenwater      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedcreamofchickenwater,      }
+																												 
+model HCCannedgovernmentbeef           { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentbeef,           scale=1.25, }
+model HCCannedgovernmentbeefempty      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentbeefempty,      scale=1.25, }
+model HCCannedgovernmentbeefopen       { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentbeef,           scale=1.25, }
+model HCCannedgovernmentbeefwater      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentbeefwater,      scale=1.25, }
+																																     
+model HCCannedgovernmentbread          { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentbread,          scale=1.25, }
+model HCCannedgovernmentbreadempty     { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentbreadempty,     scale=1.25, } 
+model HCCannedgovernmentbreadopen      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentbread,          scale=1.25, }
+model HCCannedgovernmentbreadwater     { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentbreadwater,     scale=1.25, }
+																																     
+model HCCannedgovernmentchicken        { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentchicken,        scale=1.25, }
+model HCCannedgovernmentchickenempty   { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentchickenempty,   scale=1.25, }
+model HCCannedgovernmentchickenopen    { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentchicken,        scale=1.25, }
+model HCCannedgovernmentchickenwater   { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentchickenwater,   scale=1.25, }
+																																     
+model HCCannedgovernmentpork           { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentpork,           scale=1.25, }
+model HCCannedgovernmentporkempty      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentporkempty,      scale=1.25, }
+model HCCannedgovernmentporkopen       { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentpork,           scale=1.25, }
+model HCCannedgovernmentporkwater      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgovernmentporkwater,      scale=1.25, }
+
+model HCCannedgreenbeans               { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedgreenbeans,               }
+model HCCannedgreenbeansempty          { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgreenbeansempty,          }
+model HCCannedgreenbeansopen           { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgreenbeans,               }
+model HCCannedgreenbeanswater          { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgreenbeanswater,          }
+																																     
+model HCCannedmacncheese               { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedgeneric,                  }
+model HCCannedmacncheeseempty          { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgenericempty,             }
+model HCCannedmacncheeseopen           { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgeneric,                  }
+model HCCannedmacncheesewater          { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgenericwater,             }
+																																     
+model HCCannedpear                     { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedpear,                     }
+model HCCannedpearempty                { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpearempty,                }
+model HCCannedpearopen                 { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpear,                     }
+model HCCannedpearwater                { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpearwater,                }
+																																     
+model HCCannedpiefillingapple          { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingapple,          }
+model HCCannedpiefillingappleempty     { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingappleempty,     }
+model HCCannedpiefillingappleopen      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingapple,          }
+model HCCannedpiefillingapplewater     { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingapplewater,     }
+
+model HCCannedpiefillingblueberry      { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingblueberry,      }
+model HCCannedpiefillingblueberryempty { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingblueberryempty, }
+model HCCannedpiefillingblueberryopen  { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingblueberry,      }
+model HCCannedpiefillingblueberrywater { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingblueberrywater, }
+
+model HCCannedpiefillingcherry         { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingcherry,         }
+model HCCannedpiefillingcherryempty    { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingcherryempty,    }  
+model HCCannedpiefillingcherryopen     { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingcherry,         }
+model HCCannedpiefillingcherrywater    { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpiefillingcherrywater,    }
+
+model HCCannedpumpkin                  { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedpumpkin,                  }
+model HCCannedpumpkinempty             { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpumpkinempty,             }
+model HCCannedpumpkinopen              { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpumpkin,                  }
+model HCCannedpumpkinwater             { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedpumpkinwater,             }
+																																     
+model HCCannedravioli                  { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedravioli,                  }
+model HCCannedravioliempty             { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedravioliempty,             }
+model HCCannedravioliopen              { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedravioli,                  }
+model HCCannedravioliwater             { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedravioliwater,             }
+																																     
+model HCCannedrefriedbeans             { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedrefriedbeans,             }
+model HCCannedrefriedbeansempty        { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedrefriedbeansempty,        }
+model HCCannedrefriedbeansopen         { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedrefriedbeans,             }
+model HCCannedrefriedbeanswater        { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedrefriedbeanswater,        }
+																																     
+model HCCannedshrooms                  { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedshrooms,                  }
+model HCCannedshroomsempty             { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedshroomsempty,             }
+model HCCannedshroomsopen              { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedshrooms,                  }
+model HCCannedshroomswater             { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedshroomswater,             }
+																																     
+model HCCannedsoupclassic              { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedgeneric,                  }
+model HCCannedsoupclassicempty         { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgenericempty,             }
+model HCCannedsoupclassicopen          { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgeneric,                  }
+model HCCannedsoupclassicwater         { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedgenericwater,             }
+																																     
+model HCCannedspaghettirings           { mesh = CanClosed, texture = HC_Food_Canned/HC_Food_Canned.HCCannedspaghettirings,           }
+model HCCannedspaghettiringsempty      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedspaghettiringsempty,      }
+model HCCannedspaghettiringsopen       { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedspaghettirings,           }
+model HCCannedspaghettiringswater      { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCannedspaghettiringswater,      }
+																																     
+model HCCannedspam                     { mesh = WorldItems/HCCannedSpam, texture = HC_Food_Canned/HC_Food_Canned.HCCannedspam,       }
+model HCCannedspamempty                { mesh = WorldItems/HCCannedSpam, texture = HC_Food_Canned/HC_Food_Canned.HCCannedspamempty,  }
+model HCCannedspamopen                 { mesh = WorldItems/HCCannedSpam, texture = HC_Food_Canned/HC_Food_Canned.HCCannedspamopen,   }
+model HCCannedspamwater                { mesh = WorldItems/HCCannedSpam, texture = HC_Food_Canned/HC_Food_Canned.HCCannedspamwater,  }
+
+}

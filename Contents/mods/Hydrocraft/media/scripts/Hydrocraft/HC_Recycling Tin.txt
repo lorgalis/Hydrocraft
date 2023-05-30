@@ -11,9 +11,9 @@ module Hydrocraft
 recipe Recycle Tin
     {
     SkillRequired:MetalWelding=2,
-    HCTincan/HCCannedcornedbeefempty/HCCannedcornempty/HCCannedmushroomsoupempty/HCCannedpeasempty/HCCannedpotatoempty/HCCannedsardinesempty/HCCannedtomatoempty/HCCannedcarrotsempty/HCBeansempty/HCTinnedsoupempty/HCTunatinempty/HCDogfoodempty/HCCannedbologneseempty/HCCannedchiliempty/HCCannedsoupclassicempty/HCCannedappleempty/HCCannedpearempty/HCCannedpeachempty/HCCannedgreenbeansempty/HCCannedmushroomsempty/HCCannedpumpkinempty/HCCannedspamempty/HCCannedcranberriesempty/HCCannedpineappleempty/HCCannedrefriedbeansempty,
-    HCTincan/HCCannedcornedbeefempty/HCCannedcornempty/HCCannedmushroomsoupempty/HCCannedpeasempty/HCCannedpotatoempty/HCCannedsardinesempty/HCCannedtomatoempty/HCCannedcarrotsempty/HCBeansempty/HCTinnedsoupempty/HCTunatinempty/HCDogfoodempty/HCCannedbologneseempty/HCCannedchiliempty/HCCannedsoupclassicempty/HCCannedappleempty/HCCannedpearempty/HCCannedpeachempty/HCCannedgreenbeansempty/HCCannedmushroomsempty/HCCannedpumpkinempty/HCCannedspamempty/HCCannedcranberriesempty/HCCannedpineappleempty/HCCannedrefriedbeansempty,
-    HCTincan/HCCannedcornedbeefempty/HCCannedcornempty/HCCannedmushroomsoupempty/HCCannedpeasempty/HCCannedpotatoempty/HCCannedsardinesempty/HCCannedtomatoempty/HCCannedcarrotsempty/HCBeansempty/HCTinnedsoupempty/HCTunatinempty/HCDogfoodempty/HCCannedbologneseempty/HCCannedchiliempty/HCCannedsoupclassicempty/HCCannedappleempty/HCCannedpearempty/HCCannedpeachempty/HCCannedgreenbeansempty/HCCannedmushroomsempty/HCCannedpumpkinempty/HCCannedspamempty/HCCannedcranberriesempty/HCCannedpineappleempty/HCCannedrefriedbeansempty,
+    [Recipe.GetItemTypes.HCTinCan]/[Recipe.GetItemTypes.HCTinCanLabeled],
+    [Recipe.GetItemTypes.HCTinCan]/[Recipe.GetItemTypes.HCTinCanLabeled],
+    [Recipe.GetItemTypes.HCTinCan]/[Recipe.GetItemTypes.HCTinCanLabeled],
     Charcoal,
 
     [Recipe.GetItemTypes.StartFire],

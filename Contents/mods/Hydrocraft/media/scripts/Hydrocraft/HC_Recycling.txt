@@ -74,13 +74,6 @@ item HCChickenwire
 
 /************************RECIPES************************/
 
-recipe Remove Can Label
-    {
-	HCCannedcornempty/HCCannedmushroomsoupempty/HCCannedpeasempty/HCCannedpotatoempty/HCCannedtomatoempty/HCCannedcarrotsempty/HCBeansempty/HCTinnedsoupempty/HCDogfoodempty/HCCannedbologneseempty/HCCannedchiliempty/HCCannedsoupclassicempty/HCCannedappleempty/HCCannedpearempty/HCCannedpeachempty/HCCannedgreenbeansempty/HCCannedmushroomsempty/HCCannedpumpkinempty/HCCannedcranberriesempty/HCCannedpineappleempty/HCCannedrefriedbeansempty/HCCannedcheesesauceopenempty/HCCannedchickenbreastopenempty/HCCannedfruitcocktailopenempty/HCCannedgovermentbeefopenempty/HCCannedgovermentbreadopenempty/HCCannedgovermentchickenopenempty/HCCannedgovermentporkopenempty/HCCannedmacncheeseopenempty/HCCannedpiefillingcherryopenempty/HCCannedpiefillingappleopenempty/HCCannedpiefillingblueberryopenempty/HCCannedravioliopenempty/HCCannedspaghettiringsopenempty,
-    Result:HCTincan,
-    Time:20.0,
-    }
-
 recipe Remove Jar Label
     {
     HCPeanutbutterjarempty,

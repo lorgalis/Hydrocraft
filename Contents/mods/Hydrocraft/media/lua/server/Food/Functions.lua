@@ -19,7 +19,7 @@ local function getRecipe(recipeName)
 	end
 	for i=0,allRecipes:size()-1 do
 		local recipe = allRecipes:get(i)
-		if recipe:getName() == recipeName then	
+		if recipe:getOriginalName() == recipeName then	
 			return recipe
 		end
 	end

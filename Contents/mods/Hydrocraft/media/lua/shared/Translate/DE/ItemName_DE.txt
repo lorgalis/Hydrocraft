@@ -1,0 +1,66 @@
+ItemName_DE = {
+	/************************Translations by Sucuklu Yumurta************************/
+	/***************************Improved by TheSoulrester***************************/
+	/***********Reworded/restructured to ItemName by lorgalis***********************/
+
+    /** START: HC_Food_Canned                                            */
+    /** 1  Box of Cans                                                   */
+    /** 23 Cans                                                          */
+    /** 23 Open Cans                                                     */
+	ItemName_Hydrocraft.HCCannedfoodstash                = "Packung Konservendosen",
+
+
+    ItemName_Hydrocraft.HCCanbangedup                    = "Verbeulte Konservendose",
+    ItemName_Hydrocraft.HCCannedapple                    = "Dosenäpfel",
+    ItemName_Hydrocraft.HCCannedcheesesauce              = "Dose mit Käsesoße",
+    ItemName_Hydrocraft.HCCannedchickenbreast            = "Dose mit Hühnerbrust",
+    ItemName_Hydrocraft.HCCannedcranberries              = "Dose mit Cranberries",
+    ItemName_Hydrocraft.HCCannedcreamofchicken           = "Dose mit Hühnercremesuppe",
+    ItemName_Hydrocraft.HCCannedgovernmentbeef           = "Dauerrindfleisch in der Dose",
+    ItemName_Hydrocraft.HCCannedgovernmentbread          = "Dauerbrot in der Dose",
+    ItemName_Hydrocraft.HCCannedgovernmentchicken        = "Dauerhühnchen in der Dose",
+    ItemName_Hydrocraft.HCCannedgovernmentpork           = "Dauerschweinefleisch in der Dose",
+    ItemName_Hydrocraft.HCCannedgreenbeans               = "Dose mit grünen Bohnen",
+    ItemName_Hydrocraft.HCCannedmacncheese               = "Dose mit Makkaroni und Käse",
+    ItemName_Hydrocraft.HCCannedpear                     = "Dosenbirnen",
+    ItemName_Hydrocraft.HCCannedpiefillingapple          = "Dose mit Apfelkuchenfüllung",
+    ItemName_Hydrocraft.HCCannedpiefillingblueberry      = "Dose mit Blaubeerkuchenfüllung",
+    ItemName_Hydrocraft.HCCannedpiefillingcherry         = "Dose mit Kirschkuchenfüllung",
+    ItemName_Hydrocraft.HCCannedpumpkin                  = "Dosenkürbis",
+    ItemName_Hydrocraft.HCCannedravioli                  = "Dose mit Rindfleischraviloi",
+    ItemName_Hydrocraft.HCCannedrefriedbeans             = "Dose mit Bohnenmus",
+    ItemName_Hydrocraft.HCCannedshrooms                  = "Dosenchampignons",
+    ItemName_Hydrocraft.HCCannedsoupclassic              = "Dose mit Brühe",
+    ItemName_Hydrocraft.HCCannedspaghettirings           = "Dose mit Spaghettiringen",
+    ItemName_Hydrocraft.HCCannedspam                     = "Dose mit Frühstücksfleisch",
+	
+	
+	
+    ItemName_Hydrocraft.HCCanbangedupopen                = "Verbeulte Konservendose (offen)",
+    ItemName_Hydrocraft.HCCannedappleopen                = "Dosenäpfel (offen)",
+    ItemName_Hydrocraft.HCCannedcheesesauceopen          = "Dose mit Käsesoße (offen)",
+    ItemName_Hydrocraft.HCCannedchickenbreastopen        = "Dose mit Hühnerbrust (offen)",
+    ItemName_Hydrocraft.HCCannedcranberriesopen          = "Dose mit Cranberries (offen)",
+    ItemName_Hydrocraft.HCCannedcreamofchickenopen       = "Dose mit Hühnercremesuppe (offen)",
+    ItemName_Hydrocraft.HCCannedgovernmentbeefopen       = "Dauerrindfleisch in der Dose (offen)",
+    ItemName_Hydrocraft.HCCannedgovernmentbreadopen      = "Dauerbrot in der Dose (offen)",
+    ItemName_Hydrocraft.HCCannedgovernmentchickenopen    = "Dauerhühnchen in der Dose (offen)",
+    ItemName_Hydrocraft.HCCannedgovernmentporkopen       = "Dauerschweinefleisch in der Dose (offen)",
+    ItemName_Hydrocraft.HCCannedgreenbeansopen           = "Dose mit Grüne Bohnen (offen)",
+    ItemName_Hydrocraft.HCCannedmacncheeseopen           = "Dose mit Makkaroni und Käse (offen)",
+    ItemName_Hydrocraft.HCCannedpearopen                 = "Dosenbirnen (offen)",
+    ItemName_Hydrocraft.HCCannedpiefillingappleopen      = "Dose mit Apfelkuchenfüllung (offen)",
+    ItemName_Hydrocraft.HCCannedpiefillingblueberryopen  = "Dose mit Blaubeerkuchenfüllung (offen)",
+    ItemName_Hydrocraft.HCCannedpiefillingcherryopen     = "Dose mit Kirschkuchenfüllung (offen)",
+    ItemName_Hydrocraft.HCCannedpumpkinopen              = "Dosenkürbis (offen)",
+    ItemName_Hydrocraft.HCCannedravioliopen              = "Dose mit Rindfleischraviloi (offen)",
+    ItemName_Hydrocraft.HCCannedrefriedbeansopen         = "Dose mit Bohnenmus (offen)",
+    ItemName_Hydrocraft.HCCannedshroomsopen              = "Dosenchampignons (offen)",
+    ItemName_Hydrocraft.HCCannedsoupclassicopen          = "Dose mit Brühe (offen)",
+    ItemName_Hydrocraft.HCCannedspaghettiringsopen       = "Dose mit Spaghettiringen (offen)",
+    ItemName_Hydrocraft.HCCannedspamopen                 = "Dose mit Frühstücksfleisch (offen)",
+
+
+    /** END: HC_Food_Canned                                               */
+
+}

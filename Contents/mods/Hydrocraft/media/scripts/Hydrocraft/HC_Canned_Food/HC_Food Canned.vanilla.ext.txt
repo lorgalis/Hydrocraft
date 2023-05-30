@@ -1,0 +1,64 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+	
+    /**                 Items | Recipes                                        */
+    /** Cans              (19)|                                                */
+    /** Open Cans         (19)|                                                */
+    /** Empty Cans         19#|                                                */
+    /** Cans with water    19#|                                                */
+	/** Vanialla empty can (1)|       1                                        */ 
+	/** Items/Recipies with # are modified/using a lua script                  */
+	/** Items/Recipies in () are not created but only modified a lua script    */
+	
+	
+model HCCanbangedupopen                { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCanbangedup,                }
+model HCCanbangedupwater               { mesh = CanOpen,   texture = HC_Food_Canned/HC_Food_Canned.HCCanbangedupwater,           }	
+	
+item HCCannedtinnedbeansempty   { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedtinnedbeanswater,   RainFactor = 1, }
+item HCCannedbologneseempty     { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedbolognesewater,     RainFactor = 1, }
+item HCCannedcarrotsempty       { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcarrotswater,       RainFactor = 1, }
+item HCCannedchiliempty         { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedchiliwater,         RainFactor = 1, }
+item HCCannedcornedbeefempty    { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcornedbeefwater,    RainFactor = 1, }
+item HCCannedcornempty          { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcornwater,          RainFactor = 1, }
+item HCCannedfruitbeverageempty { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedfruitbeveragewater, RainFactor = 1, }
+item HCCannedfruitcocktailempty { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedfruitcocktailwater, RainFactor = 1, }
+item HCCannedmilkempty          { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedmilkwater,          RainFactor = 1, }
+item HCCannedmushroomsoupempty  { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedmushroomsoupwater,  RainFactor = 1, }
+item HCCannedpeachempty         { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpeachwater,         RainFactor = 1, }
+item HCCannedpeasempty          { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpeaswater,          RainFactor = 1, }
+item HCCannedpineappleempty     { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpineapplewater,     RainFactor = 1, }
+item HCCannedpotatoempty        { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpotatowater,        RainFactor = 1, }
+item HCCannedsardinesempty      { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedsardineswater,      RainFactor = 1, }
+item HCCannedtomatoempty        { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedtomatowater,        RainFactor = 1, }
+item HCCanneddogfoodempty       { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCanneddogfoodwater,       RainFactor = 1, }
+item HCCannedtinnedsoupempty    { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedtinnedsoupwater,    RainFactor = 1, }
+item HCCannedtunatinempty       { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedtunatinwater,       RainFactor = 1, }
+
+item HCCannedtinnedbeanswater   { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedtinnedbeanswater,   RainFactor = 1, }
+item HCCannedbolognesewater     { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedbolognesewater,     RainFactor = 1, }
+item HCCannedcarrotswater       { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcarrotswater,       RainFactor = 1, }
+item HCCannedchiliwater         { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedchiliwater,         RainFactor = 1, }
+item HCCannedcornedbeefwater    { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcornedbeefwater,    RainFactor = 1, }
+item HCCannedcornwater          { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcornwater,          RainFactor = 1, }
+item HCCannedfruitbeveragewater { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedfruitbeveragewater, RainFactor = 1, }
+item HCCannedfruitcocktailwater { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedfruitcocktailwater, RainFactor = 1, }
+item HCCannedmilkwater          { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedmilkwater,          RainFactor = 1, }
+item HCCannedmushroomsoupwater  { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedmushroomsoupwater,  RainFactor = 1, }
+item HCCannedpeachwater         { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpeachwater,         RainFactor = 1, }
+item HCCannedpeaswater          { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpeaswater,          RainFactor = 1, }
+item HCCannedpineapplewater     { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpineapplewater,     RainFactor = 1, }
+item HCCannedpotatowater        { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpotatowater,        RainFactor = 1, }
+item HCCannedsardineswater      { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedsardineswater,      RainFactor = 1, }
+item HCCannedtomatowater        { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedtomatowater,        RainFactor = 1, }
+item HCCanneddogfoodwater       { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCanneddogfoodwater,       RainFactor = 1, }
+item HCCannedtinnedsoupwater    { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedtinnedsoupwater,    RainFactor = 1, }
+item HCCannedtunatinwater       { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedtunatinwater,       RainFactor = 1, }
+   
+
+ }                              
+                                

@@ -1,0 +1,217 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+    /**                 Items | Recipes                          */
+    /** Stash of Cans       1 |       1#                         */
+	/** Generic empty can   2 |                                  */
+    /** Cans               23#|      23                          */
+    /** Open Cans          23#|                                  */
+    /** Empty Cans         23#|                                  */
+    /** Cans with water    23#|                                  */
+	/** Items/Recipies with # are modified/using a lua script    */
+
+item HCCannedfoodstash
+{
+    Weight           = 4.5,
+    Type             = Normal,
+    DisplayName      = Box of Canned Goods,
+    Icon             = HCCannedfoodstash,
+    DisplayCategory  = FoodC,
+}
+
+recipe Remove Cans
+    {
+        HCCannedfoodstash,
+        Result:HCCardboardflat,
+        Time:50,
+        OnCreate:recipe_hccannedfoodbox,
+        Category:Loot,
+    }
+
+item HCTincan
+{
+	Type 		     = Normal,	
+	DisplayName      = Tincan,	
+	DisplayCategory  = Trash,
+	Icon    		 = HCTincan,
+	WorldStaticModel = TinCanEmpty_Ground,
+	Weight	    	 = 0.1,
+	CanStoreWater	 = TRUE,
+	ReplaceOnUseOn	 = WaterSource-HCTincanwater,
+	RainFactor 		 = 1,
+    Tags             = TinCan	
+}
+
+item HCTincanwater
+{
+	Type			 =	Drainable,
+	DisplayName		 =	Tin Can with Water,
+	DisplayCategory	 =  Trash,
+	Weight			 =	0.5,
+	CanStoreWater	 =	TRUE,
+	ReplaceOnUseOn	 =	WaterSource-HCTincanwater,
+	RainFactor 		 = 	1,
+	IsWaterSource	 =	TRUE,
+	UseWhileEquipped =	FALSE,
+	UseDelta		 =	0.3,
+	ReplaceOnDeplete =	HCTincan,
+	Icon			 =	HCTincanwater,
+	Tooltip 		 = 	Tooltip_item_RainFromGround,
+}	
+
+recipe Remove Can Label
+{
+	[Recipe.GetItemTypes.HCTinCanLabeled],
+    Result:HCTincan,
+    Time:20.0,
+}
+/*
+item HCScrappaper
+{
+	DisplayCategory  = FirstAid,
+	Weight	         = 0.1,
+	Type	         = Drainable,
+	UseWhileEquipped = FALSE,
+	DisplayName	     = Scrap of Paper,
+	Icon             = HC_Food_Canned.HCScrappaper,
+	WorldStaticModel = Hydrocraft.HCScrappaper,
+}
+*/
+
+/** 2023-04-28 23 Cans, 3 Cans moved to deprecated as they duplicated vanialla cans      */
+/** Attributes filled from HC_Food_canned_client.lua for consitency                      */
+                          
+item HCCanbangedup                   { Type = Food, DisplayName = Banged-Up Canned Food             }
+item HCCannedapple                   { Type = Food, DisplayName = Canned Apples                     }
+item HCCannedcheesesauce             { Type = Food, DisplayName = Canned Cheese Sauce               }
+item HCCannedchickenbreast           { Type = Food, DisplayName = Canned Chicken Breast             }
+item HCCannedcranberries             { Type = Food, DisplayName = Canned Cranberries                }
+item HCCannedcreamofchicken          { Type = Food, DisplayName = Canned Cream of Chicken           }
+item HCCannedgovernmentbeef          { Type = Food, DisplayName = Canned Government Beef            }
+item HCCannedgovernmentbread         { Type = Food, DisplayName = Canned Government Bread           }
+item HCCannedgovernmentchicken       { Type = Food, DisplayName = Canned Government Chicken         }
+item HCCannedgovernmentpork          { Type = Food, DisplayName = Canned Government Pork            }
+item HCCannedgreenbeans              { Type = Food, DisplayName = Canned Green Beans                }
+item HCCannedmacncheese              { Type = Food, DisplayName = Canned Mac and Cheese             }
+item HCCannedpear                    { Type = Food, DisplayName = Canned Pears                      }
+item HCCannedpiefillingapple         { Type = Food, DisplayName = Canned Apple Pie Filling          }
+item HCCannedpiefillingblueberry     { Type = Food, DisplayName = Canned Blueberry Pie Filling      }
+item HCCannedpiefillingcherry        { Type = Food, DisplayName = Canned Cherry Pie Filling         }
+item HCCannedpumpkin                 { Type = Food, DisplayName = Canned Pumpkin                    }
+item HCCannedravioli                 { Type = Food, DisplayName = Canned Beef Ravioli               }
+item HCCannedrefriedbeans            { Type = Food, DisplayName = Canned Refried Beans              }
+item HCCannedshrooms                 { Type = Food, DisplayName = Canned Mushrooms                  }
+item HCCannedsoupclassic             { Type = Food, DisplayName = Canned Soup Classic               }
+item HCCannedspaghettirings          { Type = Food, DisplayName = Canned Spaghetti Rings            }
+item HCCannedspam                    { Type = Food, DisplayName = Canned Spam                       }
+
+item HCCanbangedupopen               { Type = Food, DisplayName = Open Banged-Up Canned Food        }
+item HCCannedappleopen               { Type = Food, DisplayName = Open Canned Apples                }
+item HCCannedcheesesauceopen         { Type = Food, DisplayName = Open Canned Cheese Sauce          }
+item HCCannedchickenbreastopen       { Type = Food, DisplayName = Open Canned Chicken Breast        }
+item HCCannedcranberriesopen         { Type = Food, DisplayName = Open Canned Cranberries           }
+item HCCannedcreamofchickenopen      { Type = Food, DisplayName = Open Canned Cream of Chicken      }
+item HCCannedgovernmentbeefopen      { Type = Food, DisplayName = Open Canned Government Beef       }
+item HCCannedgovernmentbreadopen     { Type = Food, DisplayName = Open Canned Government Bread      }
+item HCCannedgovernmentchickenopen   { Type = Food, DisplayName = Open Canned Government Chicken    }
+item HCCannedgovernmentporkopen      { Type = Food, DisplayName = Open Canned Government Pork       }
+item HCCannedgreenbeansopen          { Type = Food, DisplayName = Open Canned Green Beans           }
+item HCCannedmacncheeseopen          { Type = Food, DisplayName = Open Canned Mac and Cheese        }
+item HCCannedpearopen                { Type = Food, DisplayName = Open Canned Pears                 }
+item HCCannedpiefillingappleopen     { Type = Food, DisplayName = Open Canned Apple Pie Filling     }
+item HCCannedpiefillingblueberryopen { Type = Food, DisplayName = Open Canned Blueberry Pie Filling }
+item HCCannedpiefillingcherryopen    { Type = Food, DisplayName = Open Canned Cherry Pie Filling    }
+item HCCannedpumpkinopen             { Type = Food, DisplayName = Open Canned Pumpkin               }
+item HCCannedravioliopen             { Type = Food, DisplayName = Open Canned Beef Ravioli          }
+item HCCannedrefriedbeansopen        { Type = Food, DisplayName = Open Canned Refried Beans         }
+item HCCannedshroomsopen             { Type = Food, DisplayName = Open Canned Mushrooms             }
+item HCCannedsoupclassicopen         { Type = Food, DisplayName = Open Canned Soup Classic          }
+item HCCannedspaghettiringsopen      { Type = Food, DisplayName = Open Canned Spaghetti Rings       }
+item HCCannedspamopen                { Type = Food, DisplayName = Open Canned Spam                  }
+
+/************************RECIPES********************************************/
+/* Inputs and Outputs are hard to automate, time cannot be set from script */
+recipe Open Banged-Up Canned Food        { HCCanbangedup,               keep [Recipe.GetItemTypes.CanOpener], Result:HCCanbangedupopen,               Time:80, }
+recipe Open Canned Apples                { HCCannedapple,               keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedappleopen,               Time:80, }
+recipe Open Canned Cheese Sauce          { HCCannedcheesesauce,         keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedcheesesauceopen,         Time:80, }
+recipe Open Canned Chicken Breast        { HCCannedchickenbreast,       keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedchickenbreastopen,       Time:80, }
+recipe Open Canned Cranberries           { HCCannedcranberries,         keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedcranberriesopen,         Time:80, }
+recipe Open Canned Cream of Chicken      { HCCannedcreamofchicken,      keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedcreamofchickenopen,      Time:80, }
+recipe Open Canned Government Beef       { HCCannedgovernmentbeef,      keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedgovernmentbeefopen,      Time:80, }
+recipe Open Canned Government Bread      { HCCannedgovernmentbread,     keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedgovernmentbreadopen,     Time:80, }
+recipe Open Canned Government Chicken    { HCCannedgovernmentchicken,   keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedgovernmentchickenopen,   Time:80, }
+recipe Open Canned Government Pork       { HCCannedgovernmentpork,      keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedgovernmentporkopen,      Time:80, }
+recipe Open Canned Green Beans           { HCCannedgreenbeans,          keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedgreenbeansopen,          Time:80, }
+recipe Open Canned Mac and Cheese        { HCCannedmacncheese,          keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedmacncheeseopen,          Time:80, }
+recipe Open Canned Pears                 { HCCannedpear,                keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedpearopen,                Time:80, }
+recipe Open Canned Apple Pie Filling     { HCCannedpiefillingapple,     keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedpiefillingappleopen,     Time:80, }
+recipe Open Canned Blueberry Pie Filling { HCCannedpiefillingblueberry, keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedpiefillingblueberryopen, Time:80, }
+recipe Open Canned Cherry Pie Filling    { HCCannedpiefillingcherry,    keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedpiefillingcherryopen,    Time:80, }
+recipe Open Canned Pumpkin               { HCCannedpumpkin,             keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedpumpkinopen,             Time:80, }
+recipe Open Canned Beef Ravioli          { HCCannedravioli,             keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedravioliopen,             Time:80, }
+recipe Open Canned Refried Beans         { HCCannedrefriedbeans,        keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedrefriedbeansopen,        Time:80, }
+recipe Open Canned Mushrooms             { HCCannedshrooms,             keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedshroomsopen,             Time:80, }
+recipe Open Canned Soup Classic          { HCCannedsoupclassic,         keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedsoupclassicopen,         Time:80, }
+recipe Open Canned Spaghetti Rings       { HCCannedspaghettirings,      keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedspaghettiringsopen,      Time:80, }
+recipe Open Canned Spam                  { HCCannedspam,                keep [Recipe.GetItemTypes.CanOpener], Result:HCCannedspamopen,                Time:80, }
+
+/** 2023-05-16 lorgalis: In order to have rain collection working the following paramenters have to be sets in script and not in lua: Weight, CanStoreWater, ReplaceOnUseOn, RainFactor */
+/**                      This is in line with some of these do not have a setter in the Item class.                                                                                     */
+/**                      All other attributes set via HC_Food_canned_client.lua->HC_Food_Canned_function.lua->HC_Food_Canned_setEmptyCanValues                                          */  
+item HCCanbangedupempty                  { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCanbangedupwater,               RainFactor = 1, }
+item HCCannedappleempty                  { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedapplewater,               RainFactor = 1, }
+item HCCannedcheesesauceempty            { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcheesesaucewater,         RainFactor = 1, }
+item HCCannedchickenbreastempty          { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedchickenbreastwater,       RainFactor = 1, }
+item HCCannedcranberriesempty            { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcranberrieswater,         RainFactor = 1, }
+item HCCannedcreamofchickenempty         { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcreamofchickenwater,      RainFactor = 1, }
+item HCCannedgovernmentbeefempty         { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgovernmentbeefwater,      RainFactor = 1, }
+item HCCannedgovernmentbreadempty        { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgovernmentbreadwater,     RainFactor = 1, }																						   
+item HCCannedgovernmentchickenempty      { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgovernmentchickenwater,   RainFactor = 1, }
+item HCCannedgovernmentporkempty         { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgovernmentporkwater,      RainFactor = 1, }
+item HCCannedgreenbeansempty             { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgreenbeanswater,          RainFactor = 1, }
+item HCCannedmacncheeseempty             { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedmacncheesewater,          RainFactor = 1, }
+item HCCannedshroomsempty                { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedshroomswater,             RainFactor = 1, }
+item HCCannedpearempty                   { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpearwater,                RainFactor = 1, }
+item HCCannedpiefillingappleempty        { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpiefillingapplewater,     RainFactor = 1, }
+item HCCannedpiefillingblueberryempty    { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpiefillingblueberrywater, RainFactor = 1, }
+item HCCannedpiefillingcherryempty       { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpiefillingcherrywater,    RainFactor = 1, }
+item HCCannedpumpkinempty                { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpumpkinwater,             RainFactor = 1, }
+item HCCannedravioliempty                { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedravioliwater,             RainFactor = 1, }
+item HCCannedrefriedbeansempty           { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedrefriedbeanswater,        RainFactor = 1, }
+item HCCannedsoupclassicempty            { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedsoupclassicwater,         RainFactor = 1, }
+item HCCannedspaghettiringsempty         { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedspaghettiringswater,      RainFactor = 1, }
+item HCCannedspamempty                   { Type = Normal,    DisplayName = Tin Can,            Weight = 0.1, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedspamwater,                RainFactor = 1, }
+
+/** 2023-05-16 lorgalis: In order to have rain collection working the following paramenters have to be sets in script and not in lua: Weight, CanStoreWater, ReplaceOnUseOn, RainFactor */
+/**                      This is in line with some of these do not have a setter in the Item class.                                                                                     */
+/**                      All other attributes set via HC_Food_canned_client.lua->HC_Food_Canned_function.lua->HC_Food_Canned_setWaterCanValues                                          */
+item HCCanbangedupwater                  { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCanbangedupwater,               RainFactor = 1, }
+item HCCannedapplewater                  { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedapplewater,               RainFactor = 1, }
+item HCCannedcheesesaucewater            { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcheesesaucewater,         RainFactor = 1, }
+item HCCannedchickenbreastwater          { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedchickenbreastwater,       RainFactor = 1, }
+item HCCannedcranberrieswater            { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcranberrieswater,         RainFactor = 1, }
+item HCCannedcreamofchickenwater         { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedcreamofchickenwater,      RainFactor = 1, }
+item HCCannedgovernmentbeefwater         { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgovernmentbeefwater,      RainFactor = 1, }
+item HCCannedgovernmentbreadwater        { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgovernmentbreadwater,     RainFactor = 1, }                                                                                            
+item HCCannedgovernmentchickenwater      { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgovernmentchickenwater,   RainFactor = 1, }
+item HCCannedgovernmentporkwater         { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgovernmentporkwater,      RainFactor = 1, }
+item HCCannedgreenbeanswater             { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedgreenbeanswater,          RainFactor = 1, }
+item HCCannedmacncheesewater             { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedmacncheesewater,          RainFactor = 1, }
+item HCCannedshroomswater                { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedshroomswater,             RainFactor = 1, }
+item HCCannedpearwater                   { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpearwater,                RainFactor = 1, }
+item HCCannedpiefillingapplewater        { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpiefillingapplewater,     RainFactor = 1, }
+item HCCannedpiefillingblueberrywater    { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpiefillingblueberrywater, RainFactor = 1, }
+item HCCannedpiefillingcherrywater       { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpiefillingcherrywater,    RainFactor = 1, }
+item HCCannedpumpkinwater                { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedpumpkinwater,             RainFactor = 1, }
+item HCCannedravioliwater                { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedravioliwater,             RainFactor = 1, }
+item HCCannedrefriedbeanswater           { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedrefriedbeanswater,        RainFactor = 1, }
+item HCCannedsoupclassicwater            { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedsoupclassicwater,         RainFactor = 1, }
+item HCCannedspaghettiringswater         { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedspaghettiringswater,      RainFactor = 1, }
+item HCCannedspamwater                   { Type = Drainable, DisplayName = Tin Can with Water, Weight = 0.5, CanStoreWater = TRUE, ReplaceOnUseOn =	WaterSource-HCCannedspamwater,                RainFactor = 1, }
+
+}
